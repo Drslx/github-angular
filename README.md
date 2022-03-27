@@ -6,9 +6,9 @@ Usando como referência nossos estudos anteriores com o Weather App (utilizando 
 
 Precisa mostrar na tela: (url: https://api.github.com/users/<nome_do_usuario>)
 
-OK - Imagem do avatar (avatar_url)
-Ok - Nome de usuário (login)
-Ok - Nome (name)
+- Imagem do avatar (avatar_url)
+- Nome de usuário (login)
+- Nome (name)
 - Link para página do github (html_url)
 - Quantidade de seguidores (followers)
 - Quantidade de repositórios públicos (public_repos)
@@ -18,7 +18,7 @@ Ok - Nome (name)
 
 - [x] Somente utilizar um único componente (app.component.ts)
 - [x] Utilizar estilo css próprio e pelo menos um componente do [Bootstrap](https://getbootstrap.com/) (já está importado o css no index.html)
-- [x] Utilizar metodo fetch (asíncrono) para requisições HTTP
+- [X] Utilizar metodo fetch (asíncrono) para requisições HTTP
 
 ## Features
 
