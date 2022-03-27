@@ -31,14 +31,14 @@ export class AppComponent {
     return data;
   }
 
-  // listener for the fetch button, which calls the function that requests api
+  // Ouvinte para o botão de busca, que chama a função getUser que solicita a api
   handleClick(): void {
     this.getUser(this.search__user).then((data) => {
       this.users.push(data);
     });
   }
 
-  // event listener
+  // Ouvinte de evento
   handleSearchChange(event: any) {
     this.search__user = event.target.value;
   }
