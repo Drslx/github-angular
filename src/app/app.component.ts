@@ -23,6 +23,7 @@ export class AppComponent {
   users: User[] = [];
   search__user = '';
 
+  // Metodo para consumir api
   async getUser(user: string): Promise<User> {
     const response = await fetch(`https://api.github.com/users/${user}`);
     const data = await response.json();

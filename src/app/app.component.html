@@ -1,40 +1,51 @@
-<div class="row center">
+<div class="header">
   <div class="input-field">
-    <label for="user">
-      <input type="text" id="user" (input)="handleSearchChange($event)" />
+    <label for="input-user">
+      <input
+        id="input-user"
+        type="text"
+        (input)="handleSearchChange($event)"
+        placeholder="Search User"
+      />
     </label>
+
+    <button class="btn btn-primary" id="search" (click)="handleClick()">
+      Search
+    </button>
   </div>
   <!--  -->
-  <button class="btn btn-primary" id="search" (click)="handleClick()">
-    Search
-  </button>
 </div>
 
 <!-- Section user info -->
-<div class="user-info" *ngFor="let user of users">
+<div class="sidebar" *ngFor="let user of users">
   <img class="avatar-user" [src]="user.avatar_url" alt="avar" />
 
-  <div class="bio-user">
-    {{ user.name }}
-    <br />
-    {{ user.login }}
-    <br />
-    {{ user.bio }}
-  </div>
+  <div class="profile-user">
+    <h1>
+      <span>
+        {{ user.name }}
+      </span>
+    </h1>
 
-  <!-- Fazer link para seguidores e quem o usuario esta seguindo -->
-  <div class="">
-    <ul>
-      <li>followers</li>
-      <li>following</li>
-    </ul>
-  </div>
-  <!-- Mostrar um lista com company, location, email -->
-  <div>
-    <ul>
-      <li>Company</li>
-      <li>Location</li>
-      <li>Email</li>
-    </ul>
+    <h4>{{ user.login }}</h4>
+    <br />
+    <h5>{{ user.bio }}</h5>
+
+    <!-- Fazer link para seguidores e quem o usuario esta seguindo -->
+    <div class="">
+      <ul>
+        <li>{{ user.followers }} followers</li>
+        .
+        <li>{{ user.following }} following</li>
+      </ul>
+    </div>
+    <!-- Mostrar um lista com company, location, email -->
+    <div>
+      <ul>
+        <li>Company</li>
+        <li>Location</li>
+        <li>Email</li>
+      </ul>
+    </div>
   </div>
 </div>
