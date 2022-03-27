@@ -8,32 +8,33 @@
   <button class="btn btn-primary" id="search" (click)="handleClick()">
     Search
   </button>
+</div>
 
-  <div *ngFor="let user of users">
-    <img class="avatar-user" [src]="user.avatar_url" alt="avar" />
+<!-- Section user info -->
+<div class="user-info" *ngFor="let user of users">
+  <img class="avatar-user" [src]="user.avatar_url" alt="avar" />
 
-    <div class="bio-user">
-      {{ user.name }}
-      <br />
-      {{ user.login }}
-      <br />
-      {{ user.bio }}
-    </div>
+  <div class="bio-user">
+    {{ user.name }}
+    <br />
+    {{ user.login }}
+    <br />
+    {{ user.bio }}
+  </div>
 
-    <!-- Fazer link para seguidores e quem o usuario esta seguindo -->
-    <div class="">
-      <ul>
-        <li>followers</li>
-        <li>following</li>
-      </ul>
-    </div>
-    <!-- Mostrar um lista com company, location, email -->
-    <div>
-      <ul>
-        <li>Company</li>
-        <li>Location</li>
-        <li>Email</li>
-      </ul>
-    </div>
+  <!-- Fazer link para seguidores e quem o usuario esta seguindo -->
+  <div class="">
+    <ul>
+      <li>followers</li>
+      <li>following</li>
+    </ul>
+  </div>
+  <!-- Mostrar um lista com company, location, email -->
+  <div>
+    <ul>
+      <li>Company</li>
+      <li>Location</li>
+      <li>Email</li>
+    </ul>
   </div>
 </div>
