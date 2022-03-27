@@ -50,3 +50,5 @@ To get data from API you can check in javascript
 ## Projeto para Referência
 
 - [Stackblitz weather-angular](https://stackblitz.com/edit/angular-ivy-fepuhr?file=src%2Fapp%2Fapp.component.ts)
+
+
