@@ -11,8 +11,10 @@ export interface User {
   blog?: string;
   bio?: string;
   company?: string;
-  email?: string;
+  /*  email?: string; */
   location: string;
+  html_url: string;
+  repos_url: string;
 }
 @Component({
   selector: 'app-root',
@@ -22,6 +24,7 @@ export interface User {
 export class AppComponent {
   users: User[] = [];
   search__user = '';
+  btnSearch = 'Search';
 
   // Metodo para consumir api
   async getUser(user: string): Promise<User> {

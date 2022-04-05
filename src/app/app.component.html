@@ -1,4 +1,4 @@
-<div class="header">
+<header class="header">
   <div class="input-field">
     <label for="input-user">
       <input
@@ -10,42 +10,43 @@
     </label>
 
     <button class="btn btn-primary" id="search" (click)="handleClick()">
-      Search
+      {{ btnSearch }}
     </button>
   </div>
-  <!--  -->
-</div>
+</header>
 
 <!-- Section user info -->
-<div class="sidebar" *ngFor="let user of users">
+<div class="card-user" *ngFor="let user of users">
   <img class="avatar-user" [src]="user.avatar_url" alt="avar" />
 
   <div class="profile-user">
-    <h1>
-      <span>
-        {{ user.name }}
-      </span>
-    </h1>
+    <div class="card-names">
+      <h1>
+        <span>
+          {{ user.name }}
+        </span>
+      </h1>
 
-    <h4>{{ user.login }}</h4>
-    <br />
-    <h5>{{ user.bio }}</h5>
+      <h4>{{ user.login }}</h4>
 
-    <!-- Fazer link para seguidores e quem o usuario esta seguindo -->
-    <div class="">
-      <ul>
-        <li>{{ user.followers }} followers</li>
-        .
-        <li>{{ user.following }} following</li>
-      </ul>
+      <h5>{{ user.bio }}</h5>
     </div>
-    <!-- Mostrar um lista com company, location, email -->
-    <div>
-      <ul>
-        <li>Company</li>
-        <li>Location</li>
-        <li>Email</li>
-      </ul>
+
+    <div class="card-follow">
+      <div>
+        <a href="#">{{ user.followers }} <span>followers</span></a>
+        <span> . </span>
+        <a href="#">{{ user.following }} <span>following</span></a>
+      </div>
+
+      <div class="details">
+        <ul>
+          <li>{{ user.company }}</li>
+          <li>{{ user.location }}</li>
+          <li><a href="#">{{user.repos_url}}</a></li>
+          <li><span>Public Repositories: </span>{{ user.public_repos }}</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
