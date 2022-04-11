@@ -22,9 +22,9 @@ Precisa mostrar na tela: (url: https://api.github.com/users/<nome_do_usuario>)
 
 ## Features
 
-- [ ] Poder inserir um username do github para pesquisar
-- [ ] Clicar em um botão de busca (Search) para ter acesso a informação sobre o username
-- [ ] Ver o avatar, username, nome, quantidade de seguidores e repositórios públicos do username pesquisado
+- [X] Poder inserir um username do github para pesquisar
+- [X] Clicar em um botão de busca (Search) para ter acesso a informação sobre o username
+- [X] Ver o avatar, username, nome, quantidade de seguidores e repositórios públicos do username pesquisado
 - [ ] Ver os 4 repositórios mais recentes
 - [ ] Receber uma notificação (alerta) se o usuário for inválido / inexistente
 
