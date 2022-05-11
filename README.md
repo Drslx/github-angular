@@ -1,5 +1,7 @@
 # Desafio Angular GitHub API
 
+Desafio proposto pelo Rafael Paiva
+
 Sabemos a importância da aplicação se comunicar com APIs externas, muitas delas gratuitas, trazendo benefícios e informação adicional ao projeto.
 
 Usando como referência nossos estudos anteriores com o Weather App (utilizando o WeatherAPI), neste projeto vamos criar uma aplicação que busca por um usuário do github, utilizando o GitHub API, e mostra detalhes sobre o perfil deste usuário.
